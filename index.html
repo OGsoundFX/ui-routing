@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="js/lib/angular.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container d-flex">
+        <a href="#/">Home</a>
+        <a href="#/about">About</a>
+        <a href="#/contact">Contact</a>
+        <div ui-view></div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="components/about/about.component.js"></script>
+    <script src="components/about/about.js"></script>
+    <script src="components/home/home.component.js"></script>
+    <script src="components/home/home.js"></script>
+    <script src="components/contact/contact.component.js"></script>
+    <script src="components/contact/contact.js"></script>
+</body>
+</html>
