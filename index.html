@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="js/lib/angular.js"></script>
+    <script></script>
+    <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <input ng-model="name">
+    <h1>Hello {{ name }}</h1>
     <div class="container">
-        <header>
+
             <a href="#/">Home</a>
             <a href="#/about">About</a>
-            <a href="#/contact" ui-view>Contact</a>
-        </header>
-        <div ui-view></div>
+            <a href="#/contact">Contact</a>
+
+        <ui-view></ui-view>
     </div>
 
     <script src="js/app.js"></script>
-    <script src="js/angular-ui-router.js"></script>
     <script src="components/about/about.js"></script>
     <script src="components/about/about.component.js"></script>
     <script src="components/home/home.js"></script>

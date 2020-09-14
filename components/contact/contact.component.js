@@ -1,5 +1,5 @@
 var contact = {
-    // template: '<div>Contact</div>'
+    // template: '<div>This is my contact</div>'
     templateUrl: '../../templates/contact.html'
 };
 
