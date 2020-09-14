@@ -8,15 +8,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container d-flex">
-        <a href="#/">Home</a>
-        <a href="#/about">About</a>
-        <a href="#/contact">Contact</a>
+    <div class="container">
+        <header>
+            <a href="#/">Home</a>
+            <a href="#/about">About</a>
+            <a href="#/contact" ui-view>Contact</a>
+        </header>
+        <div ui-view></div>
     </div>
-    <div ui-view></div>
 
-    <script src="js/angular-ui-router.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/angular-ui-router.js"></script>
     <script src="components/about/about.js"></script>
     <script src="components/about/about.component.js"></script>
     <script src="components/home/home.js"></script>

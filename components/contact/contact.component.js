@@ -11,6 +11,6 @@ angular
             name: 'contact',
             url: '/contact',
             // component: 'contact'
-            template: `<div>Contact</div>`
+            template: "<div>Contact</div>"
         })
     });
