@@ -3,7 +3,7 @@ const home = {
 };
 
 angular
-    .module('contact')
+    .module('home')
     .component('home', home)
     .config(function ($stateProvider) {
         $stateProvider.sate('home', {

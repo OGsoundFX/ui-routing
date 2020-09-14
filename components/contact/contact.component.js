@@ -1,13 +1,16 @@
-const contact = {
-    template: '<div class="contact">Contact</div>'
+var contact = {
+    // template: '<div>Contact</div>'
+    templateUrl: '../../templates/contact.html'
 };
 
 angular
     .module('contact')
     .component('contact', contact)
     .config(function ($stateProvider) {
-        $stateProvider.sate('contact', {
+        $stateProvider.sate({
+            name: 'contact',
             url: '/contact',
-            component: 'contact'
+            // component: 'contact'
+            template: `<div>Contact</div>`
         })
     });
