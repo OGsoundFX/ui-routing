@@ -1,13 +1,15 @@
 const about = {
     template: '<div class="about">About</div>'
 };
-
+    
 angular
-    .module('about')
+    .module('about', ['ui.router'])
     .component('about', about)
     .config(function ($stateProvider) {
-        $stateProvider.sate('about', {
+        $stateProvider.state({
+            name: 'about',
             url: '/about',
-            component: 'about'
+            component: 'about',
+            // template: "<div>About</div>"
         })
     });

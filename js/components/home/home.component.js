@@ -1,12 +1,12 @@
 const home = {
-    template: '<div class="home">Home</div>'
+    template: '<div class="home">Hello you are Home</div>'
 };
 
 angular
-    .module('home')
+    .module('home', ['ui.router'])
     .component('home', home)
     .config(function ($stateProvider) {
-        $stateProvider.sate('home', {
+        $stateProvider.state('home', {
             url: '/',
             component: 'home'
         })
