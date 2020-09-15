@@ -1,5 +1,6 @@
 const about = {
-    template: '<div class="about">About</div>'
+    // template: '<div class="about">About</div>'
+    templateUrl: '../../templates/about.html'
 };
     
 angular
@@ -10,6 +11,5 @@ angular
             name: 'about',
             url: '/about',
             component: 'about',
-            // template: "<div>About</div>"
         })
     });

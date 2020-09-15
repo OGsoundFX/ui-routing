@@ -1,5 +1,6 @@
 const home = {
-    template: '<div class="home">Hello you are Home</div>'
+    // template: '<div class="home">Hello you are Home</div>'
+    templateUrl: '../../templates/home.html'
 };
 
 angular
