@@ -1,25 +1,25 @@
-var contact = {
-    // template: '<div>This is my contact</div>'
-    templateUrl: '../../templates/contact.html'
-};
-
 angular
     .module('contact', ['ui.router'])
-    .component('contact', contact)
     .config(function ($stateProvider) {
         $stateProvider.state({
+            redirectTo: 'contact.phone',
             name: 'contact',
             url: '/contact',
-            component: 'contact'
-            // template: "<div>Contact</div>"
+            templateUrl: '../../templates/contact.html'
+        }),
+        $stateProvider.state({
+            name: 'contact.phone',
+            url: '/phone',
+            templateUrl: '../../templates/phone.html'
+        }),
+        $stateProvider.state({
+            name: 'contact.email',
+            url: '^/email',
+            templateUrl: '../../templates/email.html'
+        }),
+        $stateProvider.state({
+            name: 'contact.phone.bio',
+            url: '/bio',
+            templateUrl: '../../templates/bio.html'
         })
     });
-
-// angular
-//     .module('app', ['ui.router'])
-//     .config(['$stateProvider', function($stateProvider) {
-//     $stateProvider.state('contact', {
-//         url: '/contact',
-//         template: `<h1>First message</h1>`
-//     });
-// }]);
