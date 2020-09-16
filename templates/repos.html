@@ -1,5 +1,7 @@
 <div class="repos">
-    Selected Repo:
+    <form ng-submit="$ctrl.searchEntry();">
+        <input type="text" placeholder="type in repo" ng-model="$ctrl.entry">
+    </form>
     <ul>
         <li ng-repeat="repo in $ctrl.list">
             <a href="{{ repo.html_url }}" target=”blank”>

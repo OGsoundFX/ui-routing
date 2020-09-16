@@ -1,7 +1,7 @@
 function ReposService ($http) {
-    this.getRepos = function () {
+    this.getRepos = function (entry) {
         return $http
-            .get('https://api.github.com/users/ogsoundfx/repos')
+            .get(`https://api.github.com/users/${entry}/repos`)
             .then(function (response) {
                 return response.data;
             });

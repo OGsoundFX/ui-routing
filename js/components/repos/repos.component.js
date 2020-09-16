@@ -2,10 +2,13 @@ const repos = {
     templateUrl: '../../templates/repos.html',
     controller: function (ReposService) {
         const ctrl = this;
-        this.list = [];
-        ReposService.getRepos().then(function (response) {
-            ctrl.list = response;
-        });
+        this.entry = "";
+        this.searchEntry = () => {
+            this.list = [];
+            ReposService.getRepos(ctrl.entry).then(function (response) {
+                ctrl.list = response;
+            });
+        };
     }
 };
 
