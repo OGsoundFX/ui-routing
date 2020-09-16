@@ -1,2 +1,2 @@
 angular
-    .module('app', ['home', 'about', 'contact']);
+    .module('app', ['home', 'about', 'contact', 'repos']);

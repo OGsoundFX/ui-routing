@@ -4,7 +4,7 @@ const home = {
 };
 
 angular
-    .module('home', ['ui.router'])
+    .module('home')
     .component('home', home)
     .config(function ($stateProvider) {
         $stateProvider.state('home', {

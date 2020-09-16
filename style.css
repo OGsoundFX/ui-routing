@@ -63,3 +63,7 @@ body {
 .history-politics {
     margin-top: 15px;
 }
+
+.active {
+    color:#00A0C6;
+}

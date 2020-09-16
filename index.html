@@ -11,9 +11,10 @@
 </head>
 <body>
     <div class="container menu">
-        <a href="#/">Home</a>
-        <a href="#/about">About</a>
-        <a href="#/contact">Contact</a>
+        <a ui-sref="home" ui-sref-active="active">Home</a>
+        <a ui-sref="about" ui-sref-active="active">About</a>
+        <a ui-sref="contact" ui-sref-active="active">Contact</a>
+        <a ui-sref="repos" ui-sref-active="active">Repos</a>
     </div>
     <div class="container content">
         <ui-view></ui-view>
@@ -26,5 +27,8 @@
     <script src="js/components/home/home.component.js"></script>
     <script src="js/components/contact/contact.js"></script>
     <script src="js/components/contact/contact.component.js"></script>
+    <script src="js/components/repos/repos.js"></script>
+    <script src="js/components/repos/repos.service.js"></script>
+    <script src="js/components/repos/repos.component.js"></script>
 </body>
 </html>

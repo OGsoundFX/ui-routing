@@ -4,9 +4,8 @@ const about = {
 };
     
 angular
-    .module('about', ['ui.router'])
+    .module('about')
     // .component('about', about)
-    // .component('politics', politics)
     .config(function ($stateProvider) {
         $stateProvider.state({
             name: 'about',

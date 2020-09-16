@@ -1,0 +1,11 @@
+<div class="repos">
+    Selected Repo:
+    <ul>
+        <li ng-repeat="repo in $ctrl.list">
+            <a href="{{ repo.html_url }}" target=”blank”>
+                {{ repo.name }}
+            </a>
+            ({{ repo.stargazers-count }} stars)
+        </li>
+    </ul>
+</div>
