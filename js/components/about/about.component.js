@@ -17,9 +17,9 @@ angular
                 '@': {
                     templateUrl: '../../templates/about.html'
                 },
-                'history@about': {
-                    templateUrl: '../../templates/history.html'
-                }
+                // 'history@about': {
+                //     templateUrl: '../../templates/history.html'
+                // }
             }
             // views: {
             //     '@': {

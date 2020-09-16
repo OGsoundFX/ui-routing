@@ -1,2 +1,2 @@
 angular
-    .module('about', ['ui.router'], 'history');
+    .module('about', ['ui.router']);
