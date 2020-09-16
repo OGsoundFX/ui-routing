@@ -16,6 +16,9 @@ angular
             views: {
                 '@': {
                     templateUrl: '../../templates/about.html'
+                },
+                'history@about': {
+                    templateUrl: '../../templates/history.html'
                 }
             }
             // views: {
