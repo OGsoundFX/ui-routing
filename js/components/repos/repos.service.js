@@ -1,5 +1,5 @@
 function ReposService ($http) {
-    this.getRepos = function (entry) {
+    this.getRepos = (entry) => {
         return $http
             .get(`https://api.github.com/users/${entry}/repos`)
             .then(function (response) {

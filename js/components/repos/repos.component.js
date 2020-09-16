@@ -18,7 +18,7 @@ angular
     .config(function ($stateProvider) {
         $stateProvider.state('repos', {
             url: '/repos',
-            component: 'repos'
+            component: 'repos',
             // templateUrl: '../../templates/repos.html'
         })
     });
